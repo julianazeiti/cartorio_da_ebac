@@ -131,7 +131,8 @@ int main() //Função responsável pelo início do desenvolvimento
 	
 		printf("\t1. Registrar Nomes\n"); //informa a opção ao usuário
 		printf("\t2. Consultar Nomes\n");  //informa a opção ao usuário
-		printf("\t3. Deletar Nomes\n\n\n");  //informa a opção ao usuário
+		printf("\t3. Deletar Nomes\n");  //informa a opção ao usuário
+		printf("\t4. Sair do Sistema\n\n\n"); //informa a opção ao usuário
 		printf("Opção: "); //fim do menu
 	
 	
@@ -152,6 +153,11 @@ int main() //Função responsável pelo início do desenvolvimento
 			
 			case 3:
 			deletar(); //chamando a função de deletar
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default:	
