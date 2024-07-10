@@ -88,6 +88,8 @@ int consultar() //Função responsável por consultar os usuários no sistema
 		printf("%s", conteudo); //scaneia o conteúdo
 	}
 	
+	fclose(file); //fecha o arquivo
+	
 	system("pause"); //pausa o sistema
 }
 
@@ -106,6 +108,9 @@ int deletar() //Função responsável por consultar os usuários no sistema
 	if(file == NULL) //validação para usuário não localizado/inexistente
 	{
 		printf("\n\nEste usuário não se encontra no sistema!.\n"); //alerta ao usuário
+	
+		fclose(file); //fecha o arquivo
+		
 		system("pause"); //pausa o sistema
 	}
 	
@@ -131,7 +136,7 @@ int main() //Função responsável pelo início do desenvolvimento
 	
 		printf("\t1. Registrar Nomes\n"); //informa a opção ao usuário
 		printf("\t2. Consultar Nomes\n");  //informa a opção ao usuário
-		printf("\t3. Deletar Nomes\n");  //informa a opção ao usuário
+		printf("\t3. Deletar Nomes\n\n");  //informa a opção ao usuário
 		printf("\t4. Sair do Sistema\n\n\n"); //informa a opção ao usuário
 		printf("Opção: "); //fim do menu
 	
